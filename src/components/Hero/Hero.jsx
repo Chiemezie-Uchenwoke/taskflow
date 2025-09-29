@@ -8,7 +8,7 @@ const Hero = () => {
         <section className="w-full min-h-[calc(100vh-4rem)] ">
             <div className="container flex flex-col md:flex-row gap-8 py-12 lg:py-16">
                 <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center">
-                    <h1 className="capitalize font-extrabold text-2xl min-[450px]:text-3xl sm:text-4xl md:text-3xl lg:text-6xl">
+                    <h1 className="capitalize font-extrabold text-3xl min-[450px]:text-4xl md:text-3xl lg:text-6xl">
                         Streamline Your <span className="text-pri-blue">Project</span> Management
                     </h1>
 
