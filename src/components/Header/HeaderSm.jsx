@@ -10,7 +10,7 @@ const HeaderSm = () => {
     const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
     return (
-        <header className="h-16 w-full border-b border-black/10 sticky top-0 left-0 flex lg:hidden items-center">
+        <header className="h-16 w-full border-b border-black/10 sticky top-0 left-0 flex lg:hidden items-center bg-white-shade z-50">
             <div className="h-full w-full relative px-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <FaListCheck className="text-pri-blue text-xl" />
