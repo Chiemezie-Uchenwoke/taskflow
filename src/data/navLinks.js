@@ -1,8 +1,20 @@
 const navLinks = [
-    "features",
-    "pricing",
-    "testimonials",
-    "FAQ"
+    {
+        id: 1,
+        linkName: "features"
+    },
+    {
+        id: 2,
+        linkName: "pricing"
+    },
+    {
+        id: 3,
+        linkName: "testimonials"
+    },
+    {
+        id: 4,
+        linkName: "FAQ"
+    }    
 ];
 
 export default navLinks;

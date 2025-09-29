@@ -1,6 +1,7 @@
 import { FaListCheck } from "react-icons/fa6";
 import { Link } from "react-router";
 import navLinks from "../../data/navLinks";
+import NavItem from "../NavItem/NavItem";
 
 const HeaderLg = () => {
     return (
@@ -14,11 +15,12 @@ const HeaderLg = () => {
 
                 <nav className="flex gap-8">
                     {
-                        navLinks.map((l, index) => {
+                        navLinks.map((l) => {
                             return (
-                                <a href="#" key={index} className="capitalize text-black/60 hover:text-black">
-                                    {l}
-                                </a>
+                                <NavItem 
+                                    key={l.id}
+                                    {...l}
+                                />
                             )
                         })
                     }
