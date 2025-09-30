@@ -31,13 +31,13 @@ const Hero = () => {
                     </div>
 
                     <p className="flex gap-2 sm:gap-4 text-xs lg:text-sm">
-                        <span className="flex gap-2 items-center">
-                            <IoIosCheckmark className="text-sec-green" />
+                        <span className="flex items-center">
+                            <IoIosCheckmark className="text-sec-green text-2xl" />
                             14-day free trial
                         </span>
 
-                        <span className="flex gap-2 items-center">
-                            <IoIosCheckmark className="text-sec-green" />
+                        <span className="flex items-center">
+                            <IoIosCheckmark className="text-sec-green text-2xl" />
                             No credit card required
                         </span>
                     </p>
@@ -54,7 +54,7 @@ const Hero = () => {
                         <FaCircle className="text-sec-green text-sm" />
                         12 tasks completed today
                     </p>
-                </div>
+                </div> 
             </div>
         </section>
     )
