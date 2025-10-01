@@ -1,6 +1,7 @@
 import HeaderLg from "../components/Header/HeaderLg";
 import HeaderSm from "../components/Header/HeaderSm";
 import Hero from "../components/Hero/Hero";
+import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
             <HeaderLg />
             <HeaderSm />
             <Hero />
+            <FeaturesSection />
         </>
     )
 }

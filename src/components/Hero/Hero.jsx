@@ -5,7 +5,12 @@ import { FaCircle } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="w-full min-h-[calc(100vh-4rem)] ">
+        <section 
+            className="w-full min-h-[calc(100vh-4rem)]" 
+            style={{
+                backgroundImage: "linear-gradient(to bottom, #f8f8f8, rgba(17, 24, 39, 0.02))",
+            }}
+        >
             <div className="container flex flex-col md:flex-row gap-8 py-12 lg:py-16">
                 <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center">
                     <h1 className="capitalize font-extrabold text-3xl min-[450px]:text-4xl md:text-3xl lg:text-6xl">
