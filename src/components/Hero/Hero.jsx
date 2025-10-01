@@ -47,7 +47,7 @@ const Hero = () => {
                     <img 
                         src={dashboardImage} 
                         alt="Image of a user panel dashboard" 
-                        className="rounded-lg shadow-xl"
+                        className="rounded-lg shadow-xl shadow-black/20"
                     />
 
                     <p className="hidden md:flex items-center gap-2 bg-white-shade p-3 shadow-xl absolute -left-4 -bottom-2 rounded-lg border border-black/10">
