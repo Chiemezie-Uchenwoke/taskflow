@@ -5,7 +5,7 @@ const FeaturesCard = ({icon: Icon, title, description, iconStyle}) => {
                 <Icon />
             </span>
 
-            <h3 className="capitalize font-bold sm:text-lg lg:text-xl">
+            <h3 className="capitalize font-bold sm:text-lg lg:text-xl text-dark-bg">
                 {title}
             </h3>
 
