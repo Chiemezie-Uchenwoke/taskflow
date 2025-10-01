@@ -50,7 +50,7 @@ const Hero = () => {
                         className="rounded-lg shadow-xl shadow-black/20"
                     />
 
-                    <p className="hidden md:flex items-center gap-2 bg-white-shade p-3 shadow-xl absolute -left-4 -bottom-2 rounded-lg border border-black/10">
+                    <p className="hidden md:flex items-center gap-2 bg-white-shade p-3 shadow-xl absolute -left-6 -bottom-2 rounded-lg border border-black/10">
                         <FaCircle className="text-sec-green text-sm" />
                         12 tasks completed today
                     </p>
