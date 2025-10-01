@@ -18,7 +18,7 @@ const Hero = () => {
 
                     <div className="flex flex-col gap-3 sm:flex-row">
                         <Link 
-                            className="py-2 lg:py-3 px-6 bg-pri-blue text-white-shade rounded-lg capitalize font-medium hover:bg-blue-700 duration-200 text-center lg:text-lg"
+                            className="py-2 lg:py-3 px-6 bg-pri-blue text-white-shade rounded-lg capitalize font-medium hover:bg-blue-700 duration-200 text-center lg:text-lg shadow-lg"
                             to="#"
                         >
                             start free trial
@@ -47,7 +47,7 @@ const Hero = () => {
                     <img 
                         src={dashboardImage} 
                         alt="Image of a user panel dashboard" 
-                        className="rounded-lg"
+                        className="rounded-lg shadow-xl"
                     />
 
                     <p className="hidden md:flex items-center gap-2 bg-white-shade p-3 shadow-xl absolute -left-4 -bottom-2 rounded-lg border border-black/10">
