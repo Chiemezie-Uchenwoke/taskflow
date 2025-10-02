@@ -2,7 +2,7 @@ const pricingData = [
     {
         id: 1,
         title: "Starter",
-        price: "$9",
+        price: {monthly: "$9", yearly: "$86"},
         features: [
             "Up to 5 team members",
             "10 projects",
@@ -15,7 +15,7 @@ const pricingData = [
     {
         id: 2,
         title: "Professional",
-        price: "$29",
+        price: {monthly: "$29", yearly: "$278"},
         features: [
             "Up to 25 team members",
             "Unlimited projects",
@@ -29,7 +29,7 @@ const pricingData = [
     {
         id: 3,
         title: "Enterprise",
-        price: "$99",
+        price: {monthly: "$99", yearly: "$950"},
         features: [
             "Unlimited team members",
             "Unlimited projects",

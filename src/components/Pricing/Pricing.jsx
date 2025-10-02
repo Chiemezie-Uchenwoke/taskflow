@@ -1,8 +1,10 @@
 import SectionIntro from "../SectionIntro/SectionIntro";
 import PricingCard from "./PricingCard";
 import pricingData from "../../data/pricingData";
+import { useState } from "react";
 
 const Pricing = () => {
+     const [isYearly, setIsYearly] = useState(false);
     return (
         <section className="bg-pri-blue/2 mt-18 py-16">
             <div className="container flex flex-col gap-10 lg:gap-12">
@@ -12,13 +14,30 @@ const Pricing = () => {
                         subtitle="Choose the plan that's right for your team"
                     />
 
-                    <div className="flex gap-3 items-center justify-center mt-7">
-                        <p className="text-dark-bg/60">Monthly</p>
-                        <div className="relative flex items-center w-12 h-6 bg-gray-200 border border-black/5 rounded-2xl cursor-pointer px-0.5">
-                            <button className="w-5 h-5 rounded-full shadow-2xl bg-white  cursor-pointer"></button>
-                        </div>
-                        <p className="font-medium">Yearly</p>
-                        <span className="bg-sec-green text-white-shade text-xs py-1 px-3 rounded-2xl">Save 20%</span>
+                    <div className="flex items-center justify-center gap-3 mt-10">
+                        <span className={!isYearly ? "font-bold text-black" : "text-gray-500"}>
+                            Monthly
+                        </span>
+
+                        <label className="relative inline-flex items-center cursor-pointer">
+                            <input
+                                type="checkbox"
+                                checked={isYearly}
+                                onChange={() => setIsYearly(!isYearly)}
+                                className="sr-only peer"
+                            />
+                            <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pri-blue after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full" />
+                        </label>
+
+                        <span className={isYearly ? "font-bold text-black" : "text-gray-500"}>
+                            Yearly
+                        </span>
+
+                        {isYearly && (
+                            <span className="ml-2 px-2 py-1 text-sm rounded-full bg-green-500 text-white">
+                                Save 20%
+                            </span>
+                        )}
                     </div>
                 </div>
 
@@ -29,6 +48,7 @@ const Pricing = () => {
                                 <PricingCard 
                                     key={p.id}
                                     {...p}
+                                    isYearly={isYearly}
                                 /> 
                             );
                         })
