@@ -4,7 +4,7 @@ const ReviewsCard = ({clientName, role, imgUrl, imgAlt, review, rating}) => {
     return (
         <div className="flex flex-col gap-4 border border-black/10 py-8 px-4 lg:px-6 rounded-2xl bg-pri-blue/2">
             <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden whitespace-nowrap shrink-0">
                     <img 
                         src={imgUrl} 
                         alt={imgAlt} 
