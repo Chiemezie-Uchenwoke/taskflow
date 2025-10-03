@@ -18,7 +18,7 @@ const FaqCard = ({question, answer, isOpen, onClick}) => {
 
             {
                 isOpen && 
-                <div className="select-none text-dark-bg/70">
+                <div className="select-none text-dark-bg/70 text-sm lg:text-base">
                     {answer}
                 </div>
             }
