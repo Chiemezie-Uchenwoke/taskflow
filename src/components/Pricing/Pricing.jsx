@@ -6,7 +6,7 @@ import { useState } from "react";
 const Pricing = () => {
      const [isYearly, setIsYearly] = useState(false);
     return (
-        <section className="bg-pri-blue/2 mt-18 py-16">
+        <section className="bg-pri-blue/2 mt-18 py-16" id="pricing">
             <div className="container flex flex-col gap-10 lg:gap-12">
                 <div>
                     <SectionIntro 

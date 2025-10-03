@@ -4,7 +4,7 @@ import reviewsData from "../../data/reviewsData";
 
 const ReviewsSection = () => {
     return (
-        <section className="container mt-18 flex flex-col gap-10 lg:gap-12">
+        <section className="container mt-18 flex flex-col gap-10 lg:gap-12" id="testimonials">
             <SectionIntro 
                 title="Loved by teams worldwide"
                 subtitle="See what our customers have to say about TaskFlow"

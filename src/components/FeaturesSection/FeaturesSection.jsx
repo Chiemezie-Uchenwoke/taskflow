@@ -4,7 +4,7 @@ import FeaturesCard from "./FeaturesCard";
 
 const FeaturesSection = () => {
     return (
-        <section className="mt-18">
+        <section className="mt-18" id="features">
             <div className="container flex flex-col gap-10 lg:gap-12">
                 <SectionIntro 
                     title="Everything you need to stay organized"
