@@ -10,7 +10,7 @@ const CtaJoin = () => {
                     Join thousands of teams who trust TaskFlow to manage their projects efficiently.
                 </p>
 
-                <div className="flex flex-col gap-4 lg:gap-8 w-full sm:flex-row sm:justify-center py-3">
+                <div className="flex flex-col gap-4 lg:gap-6 w-full sm:flex-row sm:justify-center py-3">
                     <button className="capitalize bg-white-shade text-pri-blue py-3.5 lg:py-4 px-8 cursor-pointer border-2 border-white-shade hover:brightness-95 duration-200 rounded-lg self-stretch font-semibold lg:text-lg shadow-xl">
                         start free trial
                     </button>
