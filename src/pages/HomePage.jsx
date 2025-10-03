@@ -5,6 +5,7 @@ import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 import Pricing from "../components/Pricing/Pricing";
 import ReviewsSection from "../components/Reviews/Reviews";
 import Faq from "../components/Faq/Faq";
+import CtaJoin from "../components/CtaJoin/CtaJoin";
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
             <Pricing />
             <ReviewsSection />
             <Faq />
+            <CtaJoin />
         </>
     )
 }
