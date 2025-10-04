@@ -17,9 +17,9 @@ const Footer = () => {
                         </p>
 
                         <div className="flex items-center gap-4">
-                            <a className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaTwitter /> </a>
-                            <a className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaLinkedin /> </a>
-                            <a className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaFacebook /> </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaTwitter /> </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaLinkedin /> </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-white-shade/60 cursor-pointer hover:text-pri-blue duration-200"> <FaFacebook /> </a>
                         </div>
                     </div>
 
