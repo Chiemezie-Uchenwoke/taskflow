@@ -6,6 +6,7 @@ import Pricing from "../components/Pricing/Pricing";
 import ReviewsSection from "../components/Reviews/Reviews";
 import Faq from "../components/Faq/Faq";
 import CtaJoin from "../components/CtaJoin/CtaJoin";
+import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             <ReviewsSection />
             <Faq />
             <CtaJoin />
+            <Footer />
         </>
     )
 }

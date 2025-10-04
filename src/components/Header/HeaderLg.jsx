@@ -1,17 +1,16 @@
-import { FaListCheck } from "react-icons/fa6";
 import { Link } from "react-router";
 import navLinks from "../../data/navLinks";
 import NavItem from "../NavItem/NavItem";
+import Logo from "../Logo/Logo";
 
 const HeaderLg = () => {
     return (
         <header className="h-16 w-full border-b border-black/10 sticky top-0 left-0 hidden lg:flex items-center bg-white-shade z-50">
 
             <div className="container flex justify-between items-center">
-                <div className="flex items-center gap-3">
-                    <FaListCheck className="text-pri-blue text-2xl" />
-                    <p className="font-bold text-xl">TaskFlow</p>
-                </div>
+                <Logo 
+                    style="text-dark-bg"
+                />
 
                 <nav className="flex gap-8">
                     {
