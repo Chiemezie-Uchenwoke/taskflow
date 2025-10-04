@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3  w-full py-8 border-t border-white-shade/20">
+                <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3  w-full mt-4 py-8 border-t border-white-shade/20">
                     <p className="text-white-shade/60 text-sm">© 2024 TaskFlow. All rights reserved.</p>
 
                     <p className="flex gap-4 text-sm">
