@@ -1,8 +1,7 @@
 import Logo from "../Logo/Logo";
-import { company, product, support } from "../../data/footerNavItem";
 import { FaTwitter, FaLinkedin, FaFacebook } from "react-icons/fa";
-import FooterHeading from "../FooterHeading/FooterHeading";
-import FooterNavItem from "../FooterNavItem/FooterNavItem";
+import footerData from "../../data/footerData";
+import FooterItems from "../FooterItems/FooterItems";
 
 const Footer = () => {
     return (
@@ -23,56 +22,17 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <FooterHeading text="product" />
-
-                        <ul className="flex flex-col gap-2">
-                            {
-                                product.map(p => {
-                                    return (
-                                        <FooterNavItem 
-                                            key={p.id}
-                                            {...p}
-                                        />
-                                    );
-                                })
-                            }
-                        </ul>
-                    </div>
-
-                    <div className="flex flex-col gap-4">
-                        <FooterHeading text="company" />
-
-                        <ul className="flex flex-col gap-2">
-                            {
-                                company.map(c => {
-                                    return (
-                                        <FooterNavItem 
-                                            key={c.id}
-                                            {...c}
-                                        />
-                                    );
-                                })
-                            }
-                        </ul>
-                    </div>
-
-                    <div className="flex flex-col gap-4">
-                        <FooterHeading text="support" />
-
-                        <ul className="flex flex-col gap-2">
-                            {
-                                support.map(s => {
-                                    return (
-                                        <FooterNavItem 
-                                            key={s.id}
-                                            {...s}
-                                        />
-                                    );
-                                })
-                            }
-                        </ul>
-                    </div>
+                    {
+                        footerData.map(d => {
+                            return (
+                                <FooterItems 
+                                    key={d.id}
+                                    {...d}
+                                />
+                            );
+                        })
+                    }
+                    
                 </div>
 
                 <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3  w-full mt-4 py-8 border-t border-white-shade/20">
