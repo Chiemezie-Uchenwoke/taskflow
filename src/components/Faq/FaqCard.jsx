@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const FaqCard = ({question, answer, isOpen, onClick}) => {
     return (
         <div 
-            className="w-full max-w-[45rem] border border-black/10 py-6 px-4 lg:px-6 bg-white-shade rounded-2xl cursor-pointer flex flex-col gap-2"
+            className="w-full max-w-[45rem] border border-black/10 py-6 px-4 lg:px-6 bg-white-shade rounded-2xl cursor-pointer flex flex-col gap-2 shadow"
             onClick={onClick}
         >
             <div className="flex justify-between items-center w-full">
@@ -11,8 +11,8 @@ const FaqCard = ({question, answer, isOpen, onClick}) => {
                     {question}
                 </h3>
 
-                <span className={`text-xl select-none transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
-                    <IoIosArrowDown />
+                <span className={`text-xl text-pri-blue select-none transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
+                    <IoIosArrowDown className="text-xl" />
                 </span>
             </div>
 
