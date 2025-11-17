@@ -4,6 +4,8 @@ import footerData from "../../data/footerData";
 import FooterItems from "../FooterItems/FooterItems";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="bg-dark-lite pt-18 w-full">
             <div className="container flex flex-col gap-8">
@@ -36,7 +38,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3  w-full mt-4 py-8 border-t border-white-shade/20">
-                    <p className="text-white-shade/60 text-sm">© 2024 TaskFlow. All rights reserved.</p>
+                    <p className="text-white-shade/60 text-sm">© {currentYear} TaskFlow. All rights reserved.</p>
 
                     <p className="flex gap-4 text-sm">
                         <a href="#" className="text-white-shade/60 hover:text-white-shade/90 duration-200">Privacy Policy</a>
